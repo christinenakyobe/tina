@@ -13,7 +13,7 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-info navbar-dark">
+    <nav class="navbar navbar-expand-md bg-info navbar-dark fixed-top">
         <a class="navbar-brand" href="/index.html">TINA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -33,9 +33,46 @@
         </div>  
     </nav>
       
-    <div class="container">
+    <div class="container" style="background-color: rgba(0, 0, 0, 0.75);color: white; padding: 20px 0 10px 0;"><br>
+      <h1 class="text-sucess text-center" ><b>GET IN TOUCH</b></h1><br>
+      <h3 class="text-sucess text-center">All IT related stuff</h3><br>
+      <div class="col-md-6 m-auto ">
+        <form method="post" action="#">
+            <div class="input-row" style=" display: flex; justify-content: space-between; ">
+                <div class="form-group" style="flex-basis: 45%">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="fname" placeholder="Enter Full name" name="name" required>
+                  
+                </div>
         
-        
+                <div class="form-group" style="flex-basis: 45%">
+                  <label >Phone</label>
+                  <input type="text" name="number"  class="form-control" id="number" placeholder="Enter number" required>
+                  
+                </div>
+              </div>
+
+            
+          <div class="input-row" style=" display: flex; justify-content: space-between; ">
+            <div class="form-group" style="flex-basis: 45%">
+              <label>Email</label>
+              <input  type="text" class="form-control" placeholder="Email address" name="EMail" required>
+            </div>
+    
+            <div class="form-group" style="flex-basis: 45%">
+              <label>Subject</label>
+              <input type="text" placeholder="" class="form-control">
+            </div>
+          </div>
+
+          <label>Message</label>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="bg-info">SEND</button>
+    
+         
+        </form>
+      </div>
     </div>
 </body>
 </html>
